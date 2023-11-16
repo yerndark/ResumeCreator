@@ -8,7 +8,7 @@ export default class {
     constructor () {
         this.content = document.getElementById('content')
         this.result = document.getElementById('result')
-        this.generate ()
+        this.refresh ()
     }
     render () {
         switch (this.step) {
@@ -17,7 +17,7 @@ export default class {
     
         }
     }
-    generate () {
+    refresh () {
         this.information = new information()
         this.contact = new contact()
       
