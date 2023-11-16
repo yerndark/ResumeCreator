@@ -4,15 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
     
 </head>
 <body>
-    <div id="content"></div>
-    <button onclick="main.backStep()">Back</button>
-    <button onclick="main.nextStep()">Next</button>
-    <button onclick="main.showResult()">Show Result</button>
-    <button onclick="main.generate()">Clear</button>
-    <div id="result"></div>
+    <header>
+        <div class="logo">
+            <h2>BusinessCard<span style="color: #4299e1;">.generate</span></h2>
+        </div>
+    </header>
+    <menu>
+        <div class="box"> <h1>BusinessCard<span style="color: #4299e1;">.generate</span></h1></div>
+        <div class="box1">
+            <div id="content" style="width: 50%;">
+                
+            </div>
+            <div>
+            <button class="ghost-input" onclick="main.backStep()">Back</button>
+            <button class="ghost-input" onclick="main.nextStep()">Next</button>
+            <button class="ghost-input" onclick="main.showResult()">Show Result</button>
+            <button class="ghost-input" onclick="main.generate()">Clear</button>
+            </div>
+        </div>
+       
+    </menu>
+    <div id="result">
+               
+    </div>
+ 
+
+
 
    
 
