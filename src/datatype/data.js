@@ -1,6 +1,6 @@
 export default {
-    information: null,
-    contact: null,
+    information: {},
+    contact: {},
     education: [],
     experience: [],
     achievment: [],

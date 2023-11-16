@@ -1,33 +1,35 @@
 import information from "./classes/information.js";
 import contact from "./classes/contact.js";
-
+import experiences from "./classes/experiences.js";
 
 export default class {
     step = 0
+
+
+
+
+    
     constructor () {
         this.content = document.getElementById('content')
         this.result = document.getElementById('result')
-
-        this.information = new information()
-        this.contact = new contact()
-
-        this.render()
+        this.generate ()
     }
     render () {
         switch (this.step) {
             case 0: this.content.innerHTML = this.information.form(); break;
             case 1: this.content.innerHTML = this.contact.form(); break;
-            
-            // TODO: realize the rest
+            case 2: this.content.innerHTML = this.experiences.form(); this.experiences.renderExperiences() ;break;
         }
     }
-    clear () {
+    generate () {
         this.information = new information()
         this.contact = new contact()
+        this.experiences = new experiences()
+
         this.render()
     }
     nextStep () {
-        if (this.step != 1) {
+        if (this.step != 2) {
             this.step++;
         }
         this.render()
